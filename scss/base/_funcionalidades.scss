@@ -1,0 +1,18 @@
+@mixin flex($direction, $justify, $align,$wrap:nowrap){
+    display:flex;
+    flex-direction: $direction;
+    justify-content:$justify;
+    align-items:center;
+    flex-wrap: $wrap;
+}
+@mixin bordesTarjetas{
+    border: solid 2px;
+    border-color:rgb(174, 9, 9);
+    border-radius: 10px;
+    padding: 5%;
+}
+
+@mixin bordesFeatures{
+    border:solid 2px;
+    border-color: rgb(206, 204, 204);
+}

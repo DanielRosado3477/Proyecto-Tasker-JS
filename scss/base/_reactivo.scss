@@ -1,0 +1,874 @@
+/*-----------------------------------REACTIVO INDEX-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1490px) {
+    header nav ul li {
+        font-size:nth($fontSizeParrafos,2);
+    }
+}
+
+@media screen and (max-width:1375px) {
+    header nav ul li {
+        font-size:nth($fontSizeParrafos,3);
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .heroe .imagenHeroe img {
+        margin: 0px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .heroe .textosHeroe h1 {
+        font-size:nth($fontSizeTitles,2);
+    }
+
+    .heroe .textosHeroe p {
+        font-size:nth($fontSizeParrafos,3);
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 50px;
+        right: 5px;
+        z-index: 6;
+    }
+
+    .features .textosFeatures h2 {
+        font-size: 45px;
+    }
+
+    .features .featuresContenedor h3 {
+        font-size:nth($fontSizeParrafos,3);
+    }
+
+    .features .featuresContenedor p {
+        font-size:nth($fontSizeParrafos,4);
+        margin: 10px;
+    }
+
+    .video div {
+        @include flex(column,center,wrap);
+    }
+
+    .video .videoContenedor h2 {
+        font-size:nth($fontSizeTitles,3);
+    }
+
+    .video .videoContenedor p {
+        font-size:nth($fontSizeParrafos,3);
+    }
+
+    .video div iframe {
+        margin-top: 3rem;
+        width: 400px;
+        height: 280px;
+    }
+
+    .historias h2 {
+        font-size:nth($fontSizeTitles,3);
+        padding: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .historias .historiasContenedor img {
+        width: 100px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+
+    .historias .historiasContenedor a {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .preguntas {
+        padding-top: 1rem;
+    }
+
+    .preguntas h3 {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:961px) {
+    .heroe .textosHeroe h1 {
+        font-size:nth($fontSizeTitles,3);
+    }
+    .heroe .textosHeroe {
+        padding-right: 0rem;
+    }
+    .features .featuresContenedor {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "featureCreate featureUpdate"
+            "featurePrioritize featureDelete";
+        align-content: center;
+    }
+
+    .features .featuresContenedor .featureCreate {
+        grid-area: featureCreate;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    .features .featuresContenedor .featureUpdate {
+        grid-area: featureUpdate;
+        width: 100%;
+        height: 130px;
+    }
+
+    .features .featuresContenedor .featurePrioritize {
+        grid-area: featurePrioritize;
+        width: 100%;
+    }
+
+    .features .featuresContenedor .featureDelete {
+        grid-area: featureDelete;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .heroe .textosHeroe{
+        padding-right: 1rem;
+    }
+    .heroe .imagenHeroe{
+        padding-left: 1rem;
+    }
+    .heroe .imagenHeroe img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .heroe .textosHeroe h2 {
+        font-size:nth($fontSizeTitles,4);
+    }
+
+    .features .textosFeatures h2 {
+        font-size:nth($fontSizeTitles,4);
+        padding-top: 3rem;
+    }
+
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
+    .video .videoContenedor h2 {
+        font-size:nth($fontSizeTitles,4);
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .heroe .imagenHeroe{
+        padding: 2rem;
+    }
+    .heroe .textosHeroe{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:695px) {
+    .heroe {
+        @include flex(column,space-evenly,wrap);
+    }
+
+    .heroe .textosHeroe {
+        width: 85%;
+        padding: 1rem;
+    }
+
+    .whatsapp img{
+        position: fixed;
+        bottom: 50px;
+        right: 5px;
+        z-index: 6;
+    }
+
+    .features .featuresContenedor p{
+        margin-bottom: 1px;
+        padding-bottom: 3px;
+    }
+
+    .features .featuresContenedor img{
+        margin-bottom: 20px;
+    }
+    .featureCreate{
+        @include bordesFeatures;
+    }
+    .featureDelete{
+        @include bordesFeatures;
+    }
+    .featurePrioritize{
+        @include bordesFeatures;
+    }
+    .featureUpdate{
+        @include bordesFeatures;
+    }
+    .historias .container #sliderHistorias .carousel-inner .carousel-item img{
+        height: 150px;
+    }
+
+    footer .footerContainer {
+        grid-template-columns: 0.5fr 2.5fr 2.5fr;
+        grid-template-areas:
+            "resourcesImg resources footerIcons"
+            "direction direction direction";
+    }
+    footer .footerContainer .direction p {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer h3 {
+        margin: 0.5rem;
+    }
+
+    footer .footerContainer .resources ul{
+        margin: 2px;
+        padding: 0px;
+    }
+
+    footer .footerContainer .resources ul li {
+        margin: 15px;
+    }
+
+    footer .footerContainer .footerIcons img {
+        width: 25px;
+        height: 25px;
+        margin: 10%;
+    }
+
+    footer .footerContainer .direction iframe {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .botones{
+        a{
+            font-size: 13px;
+            padding:  10px 20px ;
+        }
+    }
+    .heroe .textosHeroe h1{
+        font-size: 40px;
+    }
+    .video .videoContenedor p{
+        text-align: center;
+        width: 90%;
+    }
+    .video div iframe {
+        margin-top: 2rem;
+        width: 350px;
+        height: 190px;
+    }
+
+    .preguntas h3 {
+        font-size: 23px;
+        margin-bottom: 3px;
+    }
+
+    .preguntas .accordion{
+        font-size: 13px;
+    }
+    .preguntas .accordion-button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:400px){
+    .features .featuresContenedor .featureUpdate{
+        height: auto;
+    }
+    .video div iframe {
+        margin-top: 1rem;
+        width: 300px;
+        height: 200px;
+    }
+}
+/*---------------------------------------REACTIVO CONTACT PAGE---------------------------------*/
+@media screen and (max-width:1250px){
+    .heroeContact .derecha .textosDerecha a{
+        top: -70px;
+        right:125px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .contactPage1 .formularioContenedor{
+        width: 80%;
+    }
+    .heroeContact .botones .gift img{
+            position: relative;
+            left:10vh;
+            height: 20vh;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        top: -38px;
+        right:70px;
+    }
+}
+
+@media screen and (max-width:845px) {
+    .contactPage1 .formularioContenedor{
+    width: 90%;
+    }
+    .contactPage1 p{
+        width: 90%;
+        }
+    .heroeContact .derecha .textosDerecha p{
+        font-size: 15px;
+        width: 90%;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        top: -35px;
+        right:50px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:800px){
+    .heroeContact .derecha .textosDerecha img{
+        right: -10px;
+        top:1%;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        top: -10px;
+        right:20px;
+    }
+}
+@media screen and (max-width:750px){
+    .heroeContact .derecha .textosDerecha img{
+        right: 10px;
+        top:0px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        top:0px;
+        right:40px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .heroeContact .botones h1{
+    font-size: 40px;
+    }
+    .heroeContact .botones h2{
+    font-size: 18px;
+    }
+    .heroeContact .botones .gift img{
+    position: relative;
+    left:20vh;
+    height: 20vh;
+    }
+    .heroeContact .izquierda h2{
+    font-size: 25px;
+    }
+    .heroeContact .izquierda p{
+    font-size: 12px;
+    }
+}
+
+@media screen and (max-width:490px){
+    .botones{
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+    .heroeContact .botones h1{
+        margin-top: 5vh;
+    }
+    .contactPage1 h2{
+        font-size: 25px;
+    }
+    .contactPage1 p{
+        font-size: 15px;
+    }
+    .heroeContact .botones h2{
+        padding: 5%;
+    }
+    .heroeContact .botones .gift img{
+        position: relative;
+        left:15vh;
+        width: 130px;
+        height: 130px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        right: 15px;
+        font-size: 10px;
+        width: fit-content;
+    }
+    .heroeContact .izquierda h2{
+        font-size: 20px;
+        }
+}
+@media screen and (max-width:380px){
+    .heroeContact .botones .gift img{
+        position: relative;
+        left: 12vh;
+        width: 130px;
+        height: 130px;
+    }
+    .heroeContact .derecha .textosDerecha a{
+        right: 15px;
+        font-size: 10px;
+        width: fit-content;
+    }
+}
+/*---------------------------------------REACTIVO PRICING PAGE---------------------------------*/
+@media screen and (max-width:1000px){
+    .pricingHeroe .optionsContainer .freeOption{
+        margin: 1%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        margin: 1%;
+    }
+    .pricingHeroe .optionsContainer .proOption{
+        margin: 1%;
+    }
+    .textosSecundarios .tituloSecundario{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:850px){
+    .pricingHeroe .textosPricing h1{
+        width: 80%;
+    }
+    .pricingHeroe .textosPricing p{
+        width: 80%;
+    }
+    .pricingHeroe .optionsContainer .freeOption ul{
+        width: 90%;
+    }
+}
+@media screen and (max-width:770px){
+    .pricingHeroe .optionsContainer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .pricingHeroe .optionsContainer .freeOption{
+    width: 60%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        width: 60%;
+        }
+    .pricingHeroe .optionsContainer .proOption{
+            width: 60%;
+            }
+    .textosSecundarios{
+    height:fit-content;
+    }
+}
+@media screen and (max-width:616px){
+    .pricingHeroe .optionsContainer{
+        display: flex;
+        flex-direction:column;
+    }
+    .pricingHeroe .textosPricing{
+        height: fit-content;
+    }
+    .pricingHeroe .textosPricing p{
+        margin-bottom: 5vh;
+    }
+    .textosSecundarios .parrafoSecundario{
+        width: 90%;
+    }
+    .pricingHeroe .optionsContainer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .pricingHeroe .optionsContainer .freeOption{
+        width: 70%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        width: 70%;
+    }
+    .pricingHeroe .optionsContainer .proOption{
+        width: 70%;
+    }
+}
+@media screen and (max-width:495px){
+    .pricingHeroe .textosPricing h1{
+        font-size: 35px;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+    }
+    .pricingHeroe .textosPricing p{
+        font-size: 16px;
+    }
+    .pricingHeroe .textosPricing .botones{
+        margin-bottom: 10vh;
+    }
+    .textosSecundarios .tituloSecundario{
+        font-size: 30px;
+    }
+    .textosSecundarios .regreso a{
+        font-size: 14px;
+    }
+    .pricingHeroe .optionsContainer .freeOption{
+        width: 80%;
+    }
+    .pricingHeroe .optionsContainer .payOption{
+        width: 80%;
+    }
+    .pricingHeroe .optionsContainer .proOption{
+        width: 80%;
+    }
+}
+/*---------------------------------------REACTIVO FEATURES---------------------------------*/
+@media screen and (max-width:1378px){
+    .featuresPage1 .featuresContainer{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "androidFeature iosFeature"
+        "desktopFeature desktopFeature";
+    }
+    .featuresPage1 .featuresContainer .androidFeature{
+        grid-area:androidFeature;
+        height: fit-content;
+        margin: 10%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        grid-area:iosFeature;
+        height: fit-content;
+        margin: 10%;
+    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        grid-area:desktopFeature;
+        height: fit-content;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .featuresPage1 .featuresHeroe p{
+        padding: 5%;
+    }
+    .featuresPage1 .featuresContainer{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "androidFeature "
+        "iosFeature"
+        "desktopFeature";
+    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .featuresPage1 .featuresContainer .androidFeature{
+        margin-bottom: 0%;
+    }
+}
+@media screen and (max-width:650px){
+    .featuresPage1 .featuresHeroe h1{
+        margin-bottom: 0vh;
+    }
+    .featuresPage1 .featuresContainer .androidFeature{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        margin-left: 12%;
+        margin-right: 12%;    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+@media screen and (max-width:470px){
+    .featuresPage1 .featuresHeroe h1{
+        margin-top: 20vh;
+    }
+}
+@media screen and (max-width:390px){
+    .featuresPage1 .featuresContainer .androidFeature{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .featuresPage1 .featuresContainer .iosFeature{
+        margin-left: 5%;
+        margin-right: 5%;    }
+    .featuresPage1 .featuresContainer .desktopFeature{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+/*---------------------------------------REACTIVO ABOUTUS---------------------------------*/
+@media screen and (max-width:1000px){
+    .aboutusPage1 .aboutContainer .aboutHeroe h1{
+        font-size: 50px;
+    }
+    .aboutusPage1 .aboutContainer .aboutHeroe p{
+        font-size: 18px;
+    }
+    .aboutusPage1 .aboutContainer .story h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .story p{
+        font-size: 18px
+    }
+    .aboutusPage1 .aboutContainer .logoAbout h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .mission h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .mission p{
+        font-size: 18px;
+    }
+    .aboutusPage1 .aboutContainer .vision h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .aboutContainer .vision p{
+        font-size: 18px;
+    }
+    .aboutusPage1 .allContainer .textosContainer h2{
+        font-size: 30px;
+    }
+    .aboutusPage1 .item1 h3{
+        font-size: 20px;
+    }
+    .aboutusPage1 .item2 h3{
+        font-size: 20px;
+    }
+    .aboutusPage1 .item3 h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .aboutusPage1 .aboutContainer{
+        grid-template-rows: 300px 90px 330px fit-content;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "aboutHeroe aboutHeroe"
+        "logoAbout logoAbout"
+        "story story"
+        "mission vision";
+            .aboutHeroe{
+                padding: 1%;
+                margin-bottom: 5vh;
+            }
+            .logoAbout{
+                flex-direction: row;
+                margin-bottom: 0vh;
+                width: 25%;
+                height: fit-content;
+                border: none;
+                padding: 1%;
+                img{
+                    align-items: center;
+                    padding: 1%;
+                }
+            }
+            .mission{
+                height: 90%;
+                margin-right: 10vh;
+                }
+            .vision{
+                height: 90%;
+                margin: 1vh;
+                margin-right: 10vh;
+                margin-left: 10vh;
+            }
+    }
+}
+
+@media screen and (max-width:900px){
+    .aboutusPage1 .aboutContainer{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "aboutHeroe"
+        "logoAbout"
+        "story"
+        "mission"
+        "vision";
+    }
+    .aboutusPage1 .allContainer {
+        @include flex(column,center,center);
+        border: solid 2px;
+        border-color: #ae0909;
+        border-radius: 10px;
+        padding: 5%;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        align-items: center;
+        align-content: center;
+    }
+    .aboutusPage1 .item1{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item2{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item3{
+        margin-bottom: 3vh;
+    }
+}
+@media screen and (max-width:600px){
+    .aboutusPage1 .aboutContainer{
+            .aboutHeroe{
+                margin-right: 8vh;
+                margin-left: 8vh;
+                margin-bottom: 4vh;
+            }
+            .story{
+                grid-area: story;
+                margin-right: 8vh;
+                margin-left: 8vh;
+            }
+            .mission{
+                grid-area: mission;
+                height: 90%;
+                margin-right: 8vh;
+                margin-left: 8vh;
+                margin-bottom: 10vh;
+                }
+            .vision{
+                grid-area: vision;
+                height: 90%;
+                margin-right: 8vh;
+                margin-left: 8vh;
+                margin-bottom: 10vh;
+            }
+    }
+    .aboutusPage1 .allContainer {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-color: #ae0909;
+        border-radius: 10px;
+        padding: 5%;
+        margin-left: 8vh;
+        margin-right: 8vh;
+        align-items: center;
+        align-content: center;
+    }
+    .aboutusPage1 .item1{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item2{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item3{
+        margin-bottom: 3vh;
+    }
+}
+@media screen and (max-width:500px){
+    .aboutusPage1 .aboutContainer .aboutHeroe h1{
+        font-size: 40px;
+    }
+    .aboutusPage1 .aboutContainer{
+            .aboutHeroe{
+                grid-area: aboutHeroe;
+                padding: 1%;
+                margin-right: 3vh;
+                margin-left: 3vh;
+                margin-bottom: 4vh;
+            }
+            .logoAbout{
+                grid-area: logoAbout;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 0vh;
+                width: 25%;
+                height: fit-content;
+                border: none;
+                padding: 1%;
+                img{
+                    align-items: center;
+                    padding: 1%;
+                }
+            }
+            .story{
+                grid-area: story;
+                margin-bottom: 5vh;
+                margin-right: 3vh;
+                margin-left: 3vh;
+            }
+            .mission{
+                grid-area: mission;
+                height: 90%;
+                margin-right: 3vh;
+                margin-left: 3vh;
+                margin-bottom: 10vh;
+                }
+            .vision{
+                grid-area: vision;
+                height: 90%;
+                margin-right: 3vh;
+                margin-left: 3vh;
+                margin-bottom: 10vh;
+            }
+    }
+    .aboutusPage1 .allContainer {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px;
+        border-color: #ae0909;
+        border-radius: 10px;
+        padding: 5%;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        align-items: center;
+        align-content: center;
+    }
+    .aboutusPage1 .item1{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item2{
+        margin-bottom: 3vh;
+    }
+    .aboutusPage1 .item3{
+        margin-bottom: 3vh;
+    }
+    boutusPage1 .aboutContainer .aboutHeroe p{
+        font-size: 15px;
+    }
+    .aboutusPage1 .aboutContainer .story h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .story p{
+        font-size: 15px
+    }
+    .aboutusPage1 .aboutContainer .logoAbout h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .mission h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .mission p{
+        font-size: 15px;
+    }
+    .aboutusPage1 .aboutContainer .vision h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .aboutContainer .vision p{
+        font-size: 15px;
+    }
+    .aboutusPage1 .allContainer .textosContainer h2{
+        font-size: 28px;
+    }
+    .aboutusPage1 .item1 h3{
+        font-size: 18px;
+    }
+    .aboutusPage1 .item2 h3{
+        font-size: 18px;
+    }
+    .aboutusPage1 .item3 h3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:500px){
+    .aboutusPage1 .aboutContainer .aboutHeroe h1{
+    font-size: 35;
+    }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta property="og:image" content="https://tasker-site.netlify.app/img/jugador-de-ataque.png">
+   <meta name="description" content="Tasker is an application to help you to organize your day to day lifework in a easier way, use calendars, add tasks offline or online,synchronize all team issues, create alarms and reminders.">
+   <meta name="keywords" content="task, organize, organization, online, offline, teamwork, team, easy, synchronize, reminders, alarms, together">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="TASKER">
+   <meta property="og:url" content="https://tasker-site.netlify.app/">
+   <meta property="og:description" content="An app for helping you organize your day to day tasks">
+   <script src="./javascript/preEntrega1.js"></script>
+   <title>TASKER | An application to help you in your day to day tasks.</title>
+   <link rel="icon" href="./img/iconpage jugador-de-ataque.png" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+            <img src="./img/jugador-de-ataque.png" alt="Logo de Tasker" height="65px">Tasker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="./pages/features.html">Features</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="./pages/pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="./pages/aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="./pages/contact.html">Contact</a>
+                  </li>
+               </ul>
+               <form class="d-flex me-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+               </form>
+   
+               <!-- Botones Login y Register -->
+               <div class="navbar-buttons">
+                  <button class="btn btn-outline-primary me-2" id="login-btn">Login</button>
+                  <button class="btn btn-primary" id="register-btn">Register</button>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+   
+
+   <main>
+      <section class="heroe">
+         <div class="textosHeroe">
+            <h1>An app for improving your productivity to the next level</h1>
+            <p>Keep your tasks in order at all time no matter where you are or how big your team might be.</p>
+         </div>
+         <div class="imagenHeroe">
+            <img src="./img/heroecambio.jpg" alt="Imagen principal del heroe para sm">
+         </div>
+         <div class="botones">
+            <a href="./pages/contact.html">Start rigth now</a>
+            <p>Free as long as teams don't exceed 4 memebers </p>
+      </div>
+      </section>
+
+
+
+      <section class="whatsapp">
+         <a href="https://web.whatsapp.com/">
+            <img src="./img/whatsapp.png" alt="Logo de WhatsApp">
+         </a>
+      </section>
+
+      <section class="features">
+         <div class="textosFeatures">
+            <h2>Manage your tasks</h2>
+            <p>You can manage your tasks and projects whit your friends or teamworkers easily</p>
+         </div>
+         <div class="featuresContenedor">
+            <div class="featureCreate">
+               <h3>Create new tasks</h3>
+               <p>It doesn't matter where you are, even offline you can</p>
+               <img src="./img/boton-agregar.png" alt="icono de agregar tarea nueva">
+            </div>
+            <div class="featureUpdate">
+               <h3>Update tasks</h3>
+               <p>Pending tasks will be added as soon as you get online </p>
+               <img src="./img/actualizar-flecha.png" alt="Icono de actualizar tarea">
+            </div>
+            <div class="featurePrioritize">
+               <h3>Prioritize pendig tasks</h3>
+               <p>Prioritize which tasks are more important and make it clear for everyone</p>
+               <img src="./img/prioridad.png" alt="Icono de prioridad">
+            </div>
+            <div class="featureDelete">
+               <h3>Delete tasks</h3>
+               <p>Delete tasks without any worry, tasker tracks everything</p>
+               <img src="./img/eliminar.png" alt="Incono de eliminar">
+            </div>
+         </div>
+      </section>
+
+      <section class="video">
+         <div class="videoContenedor">
+            <h2>Many problems, one solution</h2>
+            <p>Don't miss a single thing whith tasker alarm-reminder system</p>
+         </div>
+         <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/P5-oDsxQQZo?si=3AG1JJePYyC8_374"
+               title="YouTube video player" frameborder="0"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+      </section>
+
+      <section class="historias">
+         <h2>Success stories</h2>
+         <div class="container py-4">
+            <div id="sliderHistorias" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button class="active" data-bs-target="#sliderHistorias" data-bs-slide-to="0"></button>
+                  <button data-bs-target="#sliderHistorias" data-bs-slide-to="1"></button>
+                  <button data-bs-target="#sliderHistorias" data-bs-slide-to="2"></button>
+                  <button data-bs-target="#sliderHistorias" data-bs-slide-to="3"></button>
+                  <button data-bs-target="#sliderHistorias" data-bs-slide-to="4"></button>
+               </div>
+
+               <div class="carousel-inner carousel-fade">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                     <img class="d-block w-100" src="./img/Google-Logo.wine.svg" alt="Logo de Google">
+                     <div class="carousel-caption d-sm-none d-md-block">
+                        <a href="">Take a look</a>
+                     </div>
+                  </div>
+
+                  <div class="carousel-item" data-bs-interval="5000">
+                     <img class="d-block w-100" src="./img/jenkinslogo.svg" alt="Logo de Jenkins">
+                     <div class="carousel-caption d-sm-none d-md-block">
+                        <a href="">Take a look</a>
+                     </div>
+                  </div>
+
+                  <div class="carousel-item" data-bs-interval="5000">
+                     <img class="d-block w-100" src="./img/docker.svg" alt="Logo de Docker">
+                     <div class="carousel-caption d-sm-none d-md-block">
+                        <a href="">Take a look</a>
+                     </div>
+                  </div>
+
+                  <div class="carousel-item" data-bs-interval="5000">
+                     <img class="d-block w-100" src="./img/nvidia.svg" alt="Logo de Nvidia">
+                     <div class="carousel-caption d-sm-none d-md-block">
+                        <a href="">Take a look</a>
+                     </div>
+                  </div>
+
+                  <div class="carousel-item" data-bs-interval="5000">
+                     <img class="d-block w-100" src="./img/intel-logo.svg" alt="Logo de intel">
+                     <div class="carousel-caption d-sm-none d-md-block">
+                        <a href="">Take a look</a>
+                     </div>
+                  </div>
+               </div>
+
+               <button class="carousel-control-prev" data-bs-target="#sliderHistorias" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+               </button>
+
+               <button class="carousel-control-next" data-bs-target="#sliderHistorias" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+               </button>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="preguntas">
+         <h3 id="seccionPreguntas">Frequent questions</h3>
+         <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                     What is the price?
+                  </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     Tasker it's <strong>free</strong> as long as your teams doesn't exceed 4 members. For bigger team
+                     contact our <a href="./pages/contact.html">Stuff</a>, we'll make you a special deal that satisfied
+                     your requirement for right price.
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     Does it work on android or Mac?
+                  </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     Tasker it's onle availabel on web for <strong>now</strong> but we are working to bring you as sonn
+                     as possible tasker in all your devices.
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     How can i create a new project?
+                  </button>
+               </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     You can create a new project by making click un the left menu and then click on "(+)" so you can
+                     create a project or task.
+                  </div>
+               </div>
+            </div>
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                     How can I share a project with a friend?
+                  </button>
+               </h2>
+               <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     You can share projects or tasks simply by clicking on the top rigth when you're into a created
+                     issue then there are two posible ways:
+                     <ul>
+                        <li>Share with a teamworker</li>
+                        <li>Share with someone outside your team</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="footerContainer">
+         <div class="resourcesImg">
+            <a href="./index.html">
+               <img src="./img/jugador-de-ataque.png" alt="Icono tasker">
+            </a>
+         </div>
+         <div class="resources">
+            <h3>Resources</h3>
+            <ul>
+               <li>
+                  <a href="https://www.w3schools.com/cssref/sel_visited.php" target="_blank">Help Center
+                  </a>
+               </li>
+               <li>
+                  <a href="https://discord.com/" target="_blank">Discord Chat
+                  </a>
+               </li>
+               <li>
+                  <a href="">Partners
+                  </a>
+               </li>
+               <li>
+                  <a href="">Support
+                  </a>
+               </li>
+               <li>
+                  <a href="">Employment Office
+                  </a>
+               </li>
+               <li>
+                  <a href="">Manuals
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="footerIcons">
+            <h3>Social Networks</h3>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/icons8-facebook-24.png" alt="Icono de facebook"></a>
+            <a href="https://www.discord.com/" target="_blank"><img src="./img/icon-for-discord-17.jpg" alt="Icono de facebook"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.png" alt="Icono de facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/logotipo-de-instagram.png" alt="Icono de facebook"></a>
+         </div>
+         <div class="direction">
+            <h3>Find Us</h3>
+            <p>C. Río Elba 22, Cuauhtémoc, 06700 Ciudad de México, CDMX</p>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9657.180180632466!2d-99.18027191633563!3d19.42620854496103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff003274529b%3A0xe4bf7c38b54d6acd!2sTrabajo%20falso!5e0!3m2!1ses-419!2smx!4v1721869888861!5m2!1ses-419!2smx"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+   crossorigin="anonymous"></script>
+</body>
+</html>

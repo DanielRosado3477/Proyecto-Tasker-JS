@@ -1,0 +1,128 @@
+.heroeContact{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100vh auto;
+    grid-template-areas:
+    "botones botones botones"
+    "izquierda izquierda derecha";
+    align-content: space-evenly;
+    .botones{
+        grid-area: botones;
+        h1{
+            font-size:nth($fontSizeTitles,3);
+            color: nth($coloresTitulos,1);
+            text-align: center;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+        h2{
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+        .gift{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            img{
+                position: relative;
+                left:45vh;
+                height: 20vh;
+            }
+        }
+    }
+    .izquierda{
+        grid-area: izquierda;
+        border: solid;
+        border-color:rgb(94, 7, 7);
+        border-radius: 10px;
+        margin-left:10%;
+        margin-top:5%;
+        margin-right: 5%;
+        width:80%;
+        text-align: center;
+        h2{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color:rgb(94, 7, 7);
+        }
+        p{
+            text-align: center;
+            font-size: 15px;
+            padding-left:5%;
+            padding-right: 5%;
+        }
+        .imagenesIzquierda{
+            width: 80%;
+            margin-bottom:15%;
+            padding: 5%;
+        }
+    }
+    .derecha{
+        grid-area: derecha;
+        width: 100%;
+        margin-right: 10%;
+        .textosDerecha{
+            @include flex(column,center,nowrap);
+            width: 100%;
+            margin-top: 10%;
+            position:sticky;
+            top: 200px;
+            bottom: 100px;
+            p{
+                position: relative;
+                right: 1px;
+                margin-top: 0%;
+                margin-bottom: 0%;
+                font-size: 20px;
+            }
+            img{
+                position: relative;
+                top: -20px;
+                scale: (-1) ;
+                height: 30%;
+                width: 30%;
+                align-items: center;
+                align-content: center;
+            }
+            a{
+                position: relative;
+                text-align: center;
+                top: -90px;
+                right: 150px;
+                @extend %botones;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+.contactPage1{
+    @include flex(column,center,nowrap);
+    font-size: larger;
+    margin-top: 15%;
+    margin-bottom: 3rem;
+    h2{
+        font-size:nth($fontSizeTitles,4);
+        color: nth($coloresTitulos,2);
+    }
+    .formularioContenedor{
+        border: solid rgb(94, 7, 7);
+        border-radius: 5px;
+        padding: 12px;
+        width: 60%;
+        .espacio{
+            display: flex;
+            flex-direction: column;
+            .form-control{
+                margin: 5px;
+            }
+        }
+        a{
+        @extend %botones;
+        font-size:16px;
+        }
+    }
+}

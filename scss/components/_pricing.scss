@@ -1,0 +1,151 @@
+.pricingHeroe {
+    @include flex(column,space-around,nowrap);
+    text-align: justify;
+
+    .textosPricing {
+        @include flex(column,center,nowrap);
+        height: 70vh;
+
+        h1 {
+            font-size:nth($fontSizeTitles,3);
+            color: nth($coloresTitulos,1);
+            padding: 2.5%;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        p {
+            text-align: center;
+            font-size: larger;
+            font-weight: bold;
+            margin-bottom: 10vh;
+        }
+
+        img {
+            width: 600px;
+            height: 600px;
+        }
+
+        .botones {
+            @extend %botones,
+        }
+    }
+
+    .optionsContainer {
+        @include flex(row,center,nowrap);
+        width: 100vw;
+        height: 65vh;
+
+        .freeOption {
+            @include flex(column,center,nowrap);
+            height:100%;
+            width: 100%;
+            border: 2px solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 5%;
+            &:hover {
+                @extend %animacionTarjetas;
+            }
+            img {
+                padding: 5%;
+            }
+            ul {
+                height: 30%;
+            }
+            li{
+                width: 98%;
+            }
+            .botones {
+                @extend %botones;
+            }
+        }
+
+        .payOption {
+            @include flex(column,center,nowrap);
+            height: 100%;
+            width: 100%;
+            border: 2px solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 5%;
+            &:hover {
+                @extend %animacionTarjetas;
+            }
+            img {
+                padding: 5%;
+            }
+            ul {
+                height: 30%;
+            }
+            li{
+                width: 98%;
+            }
+            .botones {
+                @extend %botones;
+            }
+        }
+        .proOption{
+            @include flex(column,center,nowrap);
+            height: 100%;
+            width: 100%;
+            border: 2px solid;
+            border-color: #5e0707;
+            border-radius: 10px;
+            margin: 5%;
+            &:hover {
+                @extend %animacionTarjetas;
+            }
+            img {
+                padding: 5%;
+            }
+            ul {
+                height: 30%;
+            }
+            li{
+                width: 98%;
+            }
+            .botones {
+                @extend %botones;
+            }
+        }
+    }
+}
+
+.textosSecundarios {
+    @include flex(column,center,nowrap);
+    height: fit-content;
+    margin-top: 5vh;
+    .tituloSecundario{
+        font-size:nth($fontSizeTitles,3);
+        color: nth($coloresTitulos,2);
+        width: 80%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .parrafoSecundario {
+        text-align: center;
+        margin-bottom: 5%;
+        font-style: italic;
+    }
+    .botones{
+        @extend %botones;
+    }
+    .regreso{
+        @include flex(column,center,nowrap);
+        a{
+            font-size: 18px;
+            color: black;
+            width: fit-content;
+            text-decoration: none;
+            text-decoration: none;
+            text-align: center;
+            padding: 4px;
+            margin-bottom: 5vh;
+            &:hover {
+                background-color: #ebe0e067;
+                border-radius: 10px;
+            }
+        }
+    }
+}

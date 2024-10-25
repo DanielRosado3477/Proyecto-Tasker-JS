@@ -1,0 +1,165 @@
+.aboutusPage1{
+    padding: 1vh;
+    .aboutContainer{
+        display: grid;    
+        grid-template-rows:fit-content 100px 100px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "aboutHeroe aboutHeroe aboutHeroe aboutHeroe"
+        "logoAbout story story story"
+        "mission mission vision vision";
+            .aboutHeroe{
+                grid-area: aboutHeroe;
+                margin-top: 5vh;
+                margin-left: 10vh;
+                margin-right: 10vh;
+                margin-bottom: 10vh;
+                width:fit-content;
+                height: fit-content;
+                @include bordesTarjetas;
+                h1{
+                    font-size:nth($fontSizeTitles,2);
+                    color: nth($coloresTitulos,1);
+                }
+                p{
+                    font-size: 20px;
+                    text-align: justify;
+                }
+            }
+            .logoAbout{
+                @include flex(column,center,nowrap);
+                grid-area: logoAbout;
+                margin-left: 10vh;
+                margin-right: 10vh;
+                margin-bottom: 10vh;
+                width:75%;
+                @include bordesTarjetas;
+                padding: 1%;
+                img{
+                    padding: 10%;
+                }
+                h2{
+                    color: rgba(94, 7, 7, 0.858);
+                    font-size: 35px;
+                }
+            }
+            .story{
+                grid-area: story;
+                margin-left: 10vh;
+                margin-right: 10vh;
+                margin-bottom: 10vh;
+                width:fit-content;
+                @include bordesTarjetas;
+                padding: 1%;
+                h2{
+                    color: rgba(94, 7, 7, 0.858);
+                    font-size: 35px; 
+                }
+                p{
+                    font-size: 20px;
+                    text-align: justify;
+                }
+            }
+            .mission{
+                grid-area: mission;
+                width: 80%;
+                margin-left: 10vh;
+                margin-right: 10vh;
+                margin-bottom: 10vh;
+                width:fit-content;
+                @include bordesTarjetas;
+                padding: 1%;
+                h2{
+                    color: rgba(94, 7, 7, 0.858);
+                    font-size: 35px; 
+                }
+                p{
+                    font-size: 20px;
+                    text-align: justify;
+                }
+            }
+            .vision{
+                grid-area: vision;
+                margin-right: 10vh;
+                margin-bottom: 10vh;
+                width:fit-content;
+                @include bordesTarjetas;
+                padding: 1%;
+                h2{
+                    color: rgba(94, 7, 7, 0.858);
+                    font-size: 35px; 
+                }
+                p{
+                    font-size: 20px;
+                    text-align: justify;
+                }
+            }
+        }
+        .allContainer{
+            display: grid;
+            @include bordesTarjetas;
+            margin-left: 10vh;
+            margin-right: 10vh;
+            grid-template-rows:10vh 30vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "textosContainer textosContainer textosContainer"
+            "item1 item2 item3"
+            ;
+            align-items:center;
+            align-content:center;
+            .textosContainer{
+                grid-area: textosContainer;
+                @include flex(column,center,nowrap);
+                h2{
+                    color: rgba(94, 7, 7, 0.858);
+                    font-size: 35px; 
+                }
+            }
+        }
+        
+        .item1{
+            grid-area: item1;
+            display: flex;
+            @include flex(column,space-around,nowrap);
+            width: 90%;
+            height: 80%;
+            @include bordesTarjetas;
+            border-color:rgb(25, 0, 0);
+            &:hover{
+                @extend %animacionTarjetas;
+            }
+            h3{
+                height: 30%;
+            }
+        }
+        .item2{
+            grid-area: item2;
+            display: flex;
+            @include flex(column,center,nowrap);
+            width: 90%;
+            height: 80%;
+            @include bordesTarjetas;
+            border-color:rgb(25, 0, 0);
+            &:hover{
+                @extend %animacionTarjetas;
+            }
+            h3{
+                height: 30%;
+            }
+        }
+        .item3{
+            grid-area: item3;
+            @include flex(column,center,nowrap);
+            width: 90%;
+            height: 80%;
+            @include bordesTarjetas;
+            border-color:rgb(25, 0, 0);
+            &:hover{
+                @extend %animacionTarjetas;
+            }
+            h3{
+                height: 30%;
+            }
+        }
+    }
