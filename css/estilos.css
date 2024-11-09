@@ -26,6 +26,13 @@
   flex-wrap: nowrap;
   width: 100%;
 }
+.principalogin h1{
+  font-size: 45px;
+  color: rgba(94, 7, 7, 0.6392156863);
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+}
 .contenedor img{
   width: 100px;
   height: 400px;
