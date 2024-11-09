@@ -1,0 +1,53 @@
+.principal {
+    background-color: $color-verde-oscuro;
+    padding: 5rem;
+    border-radius: 10px;
+    /* Rounded corners */
+    display: flex;
+    gap: 5rem;
+    /* Space between sections */
+}
+.imagenizquierda {
+    width: 30%;
+}
+
+.imagenizquierda img {
+    width: 100%;
+}
+
+.inputs {
+    width: 70%;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0.8rem 1rem;
+    border: 1px solid $color-gris-oscuro;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: $color-verde-claro;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
