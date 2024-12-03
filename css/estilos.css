@@ -1024,6 +1024,7 @@ footer .footerContainer .direction iframe {
 .pricingHeroe .optionsContainer .proOption li {
   width: 98%;
 }
+/*! ----------------------------------Modal para Carrito---------*/
 .modal {
   display: none; 
   position: fixed; 
@@ -1181,8 +1182,20 @@ footer .footerContainer .direction iframe {
     margin-right: auto;
     width: fit-content; 
   }
-
-
+/*!----------------Calendar----------------*/
+        /* Estilos básicos para el calendario */
+        #calendar {
+          max-width: 900px;
+          margin: 40px auto;
+      }
+/*! ----------------Login----------------*/
+.principalogin .register{
+    margin-top: 5vh;
+    width: 100%;
+    background: linear-gradient(145deg, #d46969, #c47761);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), inset 0 4px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(2px);
+}
 
 .textosSecundarios {
   display: flex;
